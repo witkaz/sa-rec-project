@@ -1,0 +1,32 @@
+body {
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.container__header {
+    background: url("assets/img/header-bg-img.png") center center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.btn__header {
+
+}
+
+.page__heading {
+    color: #6600a1;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    display: block;
+}
+
+.page__subheading {
+    font-size: 1.5rem;
+    text-transform: none;
+    color: #6600a1;
+    display: block;
+    font-weight: 300;
+}
