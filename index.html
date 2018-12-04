@@ -3,56 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container__header">
-            <button class="btn btn__header" type="button">Neu starten</button>
-            <h1 class="page__heading">Brillenberater
-                <span class="page__subheading">In wenigen Schritten zur perfekten Brille</span>
-            </h1>
-        </div>
+    <header class="header">
+        <button class="btn header__btn" type="button">Neu starten</button>
+        <h1 class="header__title">Brillenberater
+            <span class="header__subtitle">In wenigen Schritten zur perfekten Brille</span>
+        </h1>
     </header>
     <main>
-        <section class="container__product--header">
-            <div class="shopping-stepper">
-                <div class="stepper">
-                    1
-                </div>
-                <div class="stepper">
-                    2
-                </div>
-                <div class="stepper">
-                    3
-                </div>
-                <div class="stepper">
-                    4
-                </div>
-                <div class="stepper">
-                    5
-                </div>
+        <section class="stepper">
+            <div class="stepper__element">
+                1
             </div>
-            <div class="product-questions-answers">
-                <div class="question-content">
-                    <h3>Welche Gesichttsform haben Sie?</h3>
+            <div class="stepper__element">
+                2
+            </div>
+            <div class="stepper__element">
+                3
+            </div>
+            <div class="stepper__element">
+                4
+            </div>
+            <div class="stepper__element--active">
+                5
+            </div>
+        </section>
+        <section>
+            <div class="product__qa">
+                <div class="product__question-content">
+                    <h3>Welche Gesichtsform haben Sie?</h3>
                 </div>
-                <div class="product-answers-container">
-                    <div class="product-answer">
-                        <div class="product-answer-img">
-                            <img src="assets/img/eckig-face.png"
+                <div class="product__answers-container">
+                    <div class="product__answer">
+                        <div class="product__answer-img">
+                            <img src="assets/img/eckig-face.png">
                         </div>
-                        <div class="product-answer-bottom-container">
-                            <div class="product-answer-bottom">
-                                <span class="answer-checkbox">
+                        <div class="product__answer-bottom-container">
+                            <div class="product__answer-bottom">
+                                <span class="answer__checkbox">
+                                     <input type="checkbox" name="eckig" checked>
+                                     <label>Eckig</label>
+                                </span>
+                                <span class="answer__infotext"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__answer">
+                        <div class="product__answer-img">
+                            <img src="assets/img/rund-face.png">
+                        </div>
+                        <div class="product__answer-bottom-container">
+                            <div class="product__answer-bottom">
+                                <span class="answer__checkbox">
+                                     <input type="checkbox" name="rund" checked>
+                                     <label>Rund</label>
+                                </span>
+                                <span class="answer__infotext">
 
                                 </span>
-                                <span class="answer-description">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__answer">
+                        <div class="product__answer-img">
+                            <img src="assets/img/oval-face.png">
+                        </div>
+                        <div class="product__answer-bottom-container">
+                            <div class="product__answer-bottom">
+                                <span class="answer__checkbox">
+                                     <input type="checkbox" name="oval" checked>
+                                     <label>Oval</label>
+                                </span>
+                                <span class="answer__infotext">
 
                                 </span>
-                                <span class="answer-infotext">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__answer">
+                        <div class="product__answer-img">
+                            <img src="assets/img/herzformig-face.png">
+                        </div>
+                        <div class="product__answer-bottom-container">
+                            <div class="product__answer-bottom">
+                                <span class="answer__checkbox">
+                                     <input type="checkbox" name="herzformig" checked>
+                                     <label>Herzformig</label>
+                                </span>
+                                <span class="answer__infotext">
 
                                 </span>
                             </div>
