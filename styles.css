@@ -4,6 +4,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/*** HEADER ***/
 .header {
     background: url("assets/img/header-bg-img.png") center center no-repeat;
     background-size: cover;
@@ -31,6 +32,31 @@ body {
     font-weight: 300;
 }
 
+/*** STEPPER ***/
+.stepper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.stepper__element {
+    background: #9999cc;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 40px;
+    height: 40px;
+    width: 200px;
+    margin: 5px;
+}
+
+
+/*** PRODUCT QUESTIONS AND ANSWER SECTION ***/
+.product__question-content{
+    text-align: center;
+    font-size: 1.75rem;
+    color: #6600a1;
+}
 
 .product__answers-container {
     display: flex;
@@ -38,8 +64,31 @@ body {
     justify-content: space-between;
 }
 
+.product__answer {
+    height: 100%;
+}
+
+.product__answer-img {
+    height: 100%;
+}
+
+.product__answer-img img {
+    height: 100%;
+}
+
 .product__answer-bottom-container {
-    background: gray;
+    background: #ededed;
+}
+
+.product__answer-bottom {
+    height: 50px;
+    width: 100%;
+}
+
+.answer__checkbox {
+    position: relative;
+    top: 25%;
+    padding-left: 10px;
 }
 
 .answer__infotext:before {
@@ -47,7 +96,44 @@ body {
     content: '\f05a';
     display: inline;
     color: #6600a1;
-    background-color: #ffffff;
     vertical-align: top;
     font-weight: 900;
+    position: relative;
+    top: 25%;
+}
+
+.product__next {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.btn__label {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #6600a1;
+    padding-right: 10px;
+}
+
+.btn__next {
+    display: inline-block;
+    background-color: #6600a1;
+    height: 50px;
+    width: 50px;
+}
+
+.btn__next:before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f105';
+    display: inline;
+    color: #ffffff;
+    vertical-align: middle;
+}
+
+
+/*** STATES ***/
+.is-active {
+    background-color: #6600a1;
 }

@@ -30,7 +30,7 @@
             <div class="stepper__element">
                 4
             </div>
-            <div class="stepper__element--active">
+            <div class="stepper__element is-active">
                 5
             </div>
         </section>
@@ -47,8 +47,8 @@
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
                                 <span class="answer__checkbox">
-                                     <input type="checkbox" name="eckig" checked>
-                                     <label>Eckig</label>
+                                     <input type="checkbox" id="eckig" name="eckig">
+                                     <label for="eckig">Eckig</label>
                                 </span>
                                 <span class="answer__infotext"></span>
                             </div>
@@ -61,8 +61,8 @@
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
                                 <span class="answer__checkbox">
-                                     <input type="checkbox" name="rund" checked>
-                                     <label>Rund</label>
+                                     <input type="checkbox" id="rund" name="rund" checked>
+                                     <label for="rund">Rund</label>
                                 </span>
                                 <span class="answer__infotext">
 
@@ -77,8 +77,8 @@
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
                                 <span class="answer__checkbox">
-                                     <input type="checkbox" name="oval" checked>
-                                     <label>Oval</label>
+                                     <input type="checkbox" id="oval" name="oval" checked>
+                                     <label for="oval">Oval</label>
                                 </span>
                                 <span class="answer__infotext">
 
@@ -93,8 +93,8 @@
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
                                 <span class="answer__checkbox">
-                                     <input type="checkbox" name="herzformig" checked>
-                                     <label>Herzformig</label>
+                                     <input type="checkbox" id="herzformig" name="herzformig">
+                                     <label for="herzformig">Herzformig</label>
                                 </span>
                                 <span class="answer__infotext">
 
@@ -104,8 +104,9 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <button type="button">Weiter</button>
+            <div class="product__next" id="next-page">
+                <span class="btn__label">Weiter</span>
+                <a class="btn btn__next" href="#"></a>
             </div>
         </section>
         <section class="products-list">
