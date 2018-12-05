@@ -6,13 +6,11 @@ body {
 
 /*** HEADER ***/
 .header {
+    display: flex;
+    flex-direction: column;
     background: url("assets/img/header-bg-img.png") center center no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
     height: 100%;
-}
-
-.header__btn {
-
 }
 
 .header__title {
@@ -32,11 +30,117 @@ body {
     font-weight: 300;
 }
 
+/*** HEADINGS ***/
+.product__question-content{
+    text-align: center;
+    font-size: 1.75rem;
+    color: #6600a1;
+}
+
+.products__question-content {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #ffffff;
+    background-color: #6600a1;
+    padding: 1px;
+}
+
+.product__name {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.product__name:after {
+    content: '';
+    display: block;
+    margin-top: 15px;
+    width: 150%;
+    height: 1px;
+    background-color: #d4d4d4;
+}
+
+
+/*** BUTTONS ***/
+.btn {
+    border: none;
+    padding: 15px;
+    color: white;
+}
+
+.header__btn {
+    align-self: flex-end;
+    background-color: #9999cc;
+}
+
+.header__btn:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #6600a1;
+    box-shadow: inset 0 0 2px 2px rgba(102,0,161,1);
+}
+.header__btn:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f2f9';
+    display: inline;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding-left: 5px;
+}
+
+.btn__label {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #6600a1;
+    padding-right: 10px;
+}
+
+.btn__next {
+    display: inline-block;
+    background-color: #6600a1;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.btn__next:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #6600a1;
+    box-shadow: inset 0 0 2px 2px rgba(102,0,161,1);
+}
+
+.btn__next:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f054';
+    display: inline;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.product__attributes-list-trigger {
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: none;
+}
+.product__attributes-list-trigger:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f107';
+    display: inline;
+    font-weight: 600;
+    color: #6600a1;
+}
+
 /*** STEPPER ***/
 .stepper {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    width: 100%;
 }
 
 .stepper__element {
@@ -46,18 +150,11 @@ body {
     font-size: 1.5rem;
     line-height: 40px;
     height: 40px;
-    width: 200px;
-    margin: 5px;
+    width: 100%;
 }
 
 
 /*** PRODUCT QUESTIONS AND ANSWER SECTION ***/
-.product__question-content{
-    text-align: center;
-    font-size: 1.75rem;
-    color: #6600a1;
-}
-
 .product__answers-container {
     display: flex;
     flex-direction: row;
@@ -109,31 +206,110 @@ body {
     padding-top: 20px;
 }
 
-.btn__label {
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    vertical-align: middle;
+
+/*** PRODUCTS SECTION ***/
+.products {
+    margin: 2rem 0;
+}
+
+.product__card {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #d4d4d4;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.product__attributes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.product__img {
+    align-self: center
+}
+
+.product__attribute--positive {
+    padding: 5px 0;
+}
+
+.product__attribute--neutral {
+    padding: 5px 0;
+}
+
+.product__price-wrapper {
+    text-align: center;
+}
+
+.product__price-value {
+    display: block;
+    margin: 10% 0;
+    border: 1px solid #d4d4d4;
+    border-radius: 5%;
+    padding: 5px 10px;
+}
+
+.product__price-value p {
+    font-weight: 700;
+}
+
+.product__price-value span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
     color: #6600a1;
-    padding-right: 10px;
+    padding-top: 10px;
 }
 
-.btn__next {
-    display: inline-block;
-    background-color: #6600a1;
-    height: 50px;
-    width: 50px;
-}
-
-.btn__next:before {
-    font-family: "Font Awesome 5 Free";
-    content: '\f105';
-    display: inline;
+.product__add {
+    background: linear-gradient(135deg, rgba(58,142,0,1) 0%, rgba(98,125,77,1) 100%);
     color: #ffffff;
-    vertical-align: middle;
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 5%;
+    text-decoration: none;
 }
 
+.product__add:before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f07a';
+    display: inline;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.product__add:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f35a';
+    display: inline;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.product__add span {
+    padding: 0 8px;
+}
 
 /*** STATES ***/
 .is-active {
     background-color: #6600a1;
+}
+
+.is-clipped {
+    clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 5% 50%, 0% 0%)
+}
+
+.is-right-clipped {
+    clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 0% 50%, 0% 0%)
+}
+
+.is-left-clipped {
+   clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%)
+}
+
+
+/*** INPUTS **/
+[type=checkbox] {
+    position: relative;
+    top: 2px;
 }
