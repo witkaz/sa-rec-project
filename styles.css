@@ -68,18 +68,20 @@ body {
     color: white;
 }
 
-.header__btn {
+.btn__header {
     align-self: flex-end;
     background-color: #9999cc;
+    margin: 5px;
 }
 
-.header__btn:hover {
+.btn__header:hover {
     cursor: pointer;
     background-color: #ffffff;
     color: #6600a1;
     box-shadow: inset 0 0 2px 2px rgba(102,0,161,1);
 }
-.header__btn:after {
+
+.btn__header:after {
     font-family: "Font Awesome 5 Free";
     content: '\f2f9';
     display: inline;
@@ -119,6 +121,39 @@ body {
     text-align: center;
     font-weight: 600;
     font-size: 2.5rem;
+}
+
+.btn__previous {
+    display: inline-block;
+    background-color: #d4d4d4;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.btn__previous:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #d4d4d4;
+    box-shadow: inset 0 0 2px 2px rgba(212,212,212,1);
+}
+
+.btn__previous:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f053';
+    display: inline;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.product__previous .btn__label {
+    color: #000000;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding-left: 10px;
 }
 
 .product__attributes-list-trigger {
@@ -165,21 +200,13 @@ body {
     height: 100%;
 }
 
-.product__answer-img {
-    height: 100%;
-}
-
-.product__answer-img img {
-    height: 100%;
-}
-
 .product__answer-bottom-container {
     background: #ededed;
+    width: 100%;
 }
 
 .product__answer-bottom {
     height: 50px;
-    width: 100%;
 }
 
 .answer__checkbox {
@@ -206,6 +233,12 @@ body {
     padding-top: 20px;
 }
 
+.product__previous {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
 
 /*** PRODUCTS SECTION ***/
 .products {
@@ -291,7 +324,11 @@ body {
 }
 
 /*** STATES ***/
-.is-active {
+.is-theme-active {
+    transform: translateY(-45px);
+}
+
+.is-stepper-active {
     background-color: #6600a1;
 }
 
@@ -304,12 +341,64 @@ body {
 }
 
 .is-left-clipped {
-   clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%)
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%)
 }
 
+.is-page-show {
+    display: block;
+}
+
+.is-page-hidden {
+    display: none;
+}
 
 /*** INPUTS **/
 [type=checkbox] {
     position: relative;
     top: 2px;
+}
+
+
+/*** THEME DARK ***/
+.dark-txt-color {
+    color: #000000;
+}
+
+.dark-bg-color {
+    background: #000000;
+}
+
+.toggle {
+    /*position: absolute;*/
+    /*top: 40px;*/
+    /*right: 50px;*/
+
+    background: #ffffff;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.toggle.active {
+    border: 2px solid #ffffff;
+    background-color: #00151f;
+}
+
+.toggle:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #00151f;
+    transition: 0.5s;
+}
+
+.toggle.active:before {
+    left: 150px;
+    background-color: #ffffff
 }

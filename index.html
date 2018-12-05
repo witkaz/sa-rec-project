@@ -11,7 +11,8 @@
 </head>
 <body>
     <header class="header">
-        <button class="btn header__btn" type="button">Neu starten</button>
+        <div class="toggle"></div>
+        <button class="btn btn__header" type="button">Neu starten</button>
         <h1 class="header__title">Brillenberater
             <span class="header__subtitle">In wenigen Schritten zur perfekten Brille</span>
         </h1>
@@ -30,20 +31,18 @@
             <div class="stepper__element is-clipped">
                 4
             </div>
-            <div class="stepper__element is-active is-left-clipped">
+            <div class="stepper__element is-stepper-active is-left-clipped">
                 5
             </div>
         </section>
-        <section>
+        <section class="is-page-show" id="first-page">
             <div class="product__qa">
                 <div class="product__question-content">
                     <h3>Welche Gesichtsform haben Sie?</h3>
                 </div>
                 <div class="product__answers-container">
                     <div class="product__answer">
-                        <div class="product__answer-img">
-                            <img src="assets/img/eckig-face.png">
-                        </div>
+                        <img src="assets/img/eckig-face.png">
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
                                 <span class="answer__checkbox">
@@ -55,9 +54,7 @@
                         </div>
                     </div>
                     <div class="product__answer">
-                        <div class="product__answer-img">
-                            <img src="assets/img/rund-face.png">
-                        </div>
+                        <img src="assets/img/rund-face.png">
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
                                 <span class="answer__checkbox">
@@ -71,9 +68,7 @@
                         </div>
                     </div>
                     <div class="product__answer">
-                        <div class="product__answer-img">
-                            <img src="assets/img/oval-face.png">
-                        </div>
+                        <img src="assets/img/oval-face.png">
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
                                 <span class="answer__checkbox">
@@ -87,9 +82,7 @@
                         </div>
                     </div>
                     <div class="product__answer">
-                        <div class="product__answer-img">
-                            <img src="assets/img/herzformig-face.png">
-                        </div>
+                        <img src="assets/img/herzformig-face.png">
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
                                 <span class="answer__checkbox">
@@ -104,9 +97,62 @@
                     </div>
                 </div>
             </div>
-            <div class="product__next" id="next-page">
+            <div class="product__next">
                 <span class="btn__label">Weiter</span>
-                <a class="btn btn__next" href="#"></a>
+                <a class="btn btn__next" id="next-page"></a>
+            </div>
+        </section>
+        <section class="is-page-hidden" id="second-page">
+            <div class="product__qa">
+                <div class="product__question-content">
+                    <h3>Welche Anforderungen stellen Sie an die Fassung?</h3>
+                </div>
+                <div class="product__answers-container">
+                    <div class="product__answer">
+                        <img src="assets/img/black-glasses.png">
+                        <div class="product__answer-bottom-container">
+                            <div class="product__answer-bottom">
+                                <span class="answer__checkbox">
+                                     <input type="checkbox" id="black-glasses" name="black-glasses">
+                                     <label for="black-glasses">Bruchsicher & rostfrei: Metall-Fassungen</label>
+                                </span>
+                                <span class="answer__infotext"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__answer">
+                        <img src="assets/img/red-glasses.png">
+                        <div class="product__answer-bottom-container">
+                            <div class="product__answer-bottom">
+                                <span class="answer__checkbox">
+                                     <input type="checkbox" id="red-glasses" name="red-glasses">
+                                     <label for="red-glasses">Farbenfroh & extravagant: Kunstdoff-Fassungen</label>
+                                </span>
+                                <span class="answer__infotext">
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__answer">
+                        <img src="assets/img/rounded-glasses.png">
+                        <div class="product__answer-bottom-container">
+                            <div class="product__answer-bottom">
+                                <span class="answer__checkbox">
+                                     <input type="checkbox" id="rounded-glasses" name="rounded-glasses">
+                                     <label for="rounded-glasses">Leicht & stabil: Titan-Fassungen</label>
+                                </span>
+                                <span class="answer__infotext">
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product__previous">
+                <a class="btn btn__previous" id="previous-page"></a>
+                <span class="btn__label">Zuruck</span>
             </div>
         </section>
         <section class="products">
@@ -237,5 +283,6 @@
             </div>
         </section>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
