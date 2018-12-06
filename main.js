@@ -1,8 +1,8 @@
 // CONTENT SWITCH  //
 const nextPageBtn = document.getElementById('next-page');
 const previousPageBtn = document.getElementById('previous-page');
-const visiblePage = document.getElementById('first-page');
-const hiddenPage = document.getElementById('second-page');
+const visiblePage = document.getElementById('face-shape-page');
+const hiddenPage = document.getElementById('glasses-page');
 
 
 const toggleNextContent = (e) => {
@@ -17,10 +17,6 @@ const togglePreviousContent = (e) => {
     hiddenPage.classList.toggle('is-page-hidden');
 };
 
-nextPageBtn.addEventListener('click', toggleNextContent);
-previousPageBtn.addEventListener('click', togglePreviousContent);
-
-
 
 // THEME SWITCH //
 const toggleBtn = document.querySelector('.toggle');
@@ -30,4 +26,9 @@ const switchDarkTheme = (e) => {
     document.body.classList.toggle('dark');
 };
 
-toggleBtn.addEventListener('click', switchDarkTheme);
+
+window.onload = () => {
+    nextPageBtn.addEventListener('click', toggleNextContent);
+    previousPageBtn.addEventListener('click', togglePreviousContent);
+    toggleBtn.addEventListener('click', switchDarkTheme);
+};

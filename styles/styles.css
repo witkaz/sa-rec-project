@@ -11,7 +11,7 @@ body {
 .header {
     display: flex;
     flex-direction: column;
-    background: url("assets/img/header-bg-img.png") center center no-repeat;
+    background: url("../assets/img/header-bg-img.png") center center no-repeat;
     height: 100%;
 }
 
@@ -68,6 +68,7 @@ body {
     border: none;
     padding: 15px;
     color: white;
+    transition: all 0.3s;
 }
 
 .btn__header {
@@ -388,10 +389,6 @@ body {
 }
 
 /*** STATES ***/
-.is-theme-active {
-    transform: translateY(-45px);
-}
-
 .is-stepper-active {
     background-color: #6600a1;
 }
