@@ -1,6 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+
 .container {
     max-width: 90%;
     margin: auto
@@ -248,7 +249,7 @@ body {
     margin: 2rem 0;
 }
 
-.product__card {
+.product__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -408,24 +409,13 @@ body {
     position: relative;
     top: 15%;
     left: 14%;
-    /* position: absolute;
-    top: 3px;
-    left: 75px; */
-    /* width: 18px;
-    height: 18px; */
     border-radius: 50%;
-    /* background-color: #00151f; */
     transition: 0.5s;
 }
 
 .toggle.active {
    background-color: #6600a1;
 }
-
-/* .toggle.active:before {
-    left: 99px;
-    background-color: #ffffff
-} */
 
 /*** MEDIA QUERIES ***/
 
@@ -460,6 +450,16 @@ body {
 
     .product__add {
         margin: 0 15% 0 15%;
+    }
+
+    .toggle {
+        width: 80px;
+        height: 40px;
+    }
+
+    .toggle:before {
+        top: 20%;
+        left: 22%;
     }
 }
 

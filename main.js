@@ -1,4 +1,4 @@
-// SWITCH CONTENT //
+// CONTENT SWITCH  //
 const nextPageBtn = document.getElementById('next-page');
 const previousPageBtn = document.getElementById('previous-page');
 const visiblePage = document.getElementById('first-page');
@@ -53,6 +53,6 @@ const switchDarkTheme = function(e) {
         product.classList.toggle('dark-bg-color');
     });
     e.preventDefault();
-}
+};
 
 toggleBtn.addEventListener('click', switchDarkTheme);
