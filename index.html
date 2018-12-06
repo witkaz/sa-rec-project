@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>SA | RecTask</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="styles.css" type="text/css" rel="stylesheet">
@@ -38,61 +38,59 @@
         </section>
         <section class="is-page-show" id="first-page">
             <div class="product__qa">
-                <div class="product__question-content">
+                <div class="product__qa-title">
                     <h3>Welche Gesichtsform haben Sie?</h3>
                 </div>
                 <div class="product__answers-container">
                     <div class="product__answer">
-                        <img src="assets/img/eckig-face.png">
+                        <img src="assets/img/eckig-face.png" alt="Eckig face">
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
-                                <span class="answer__checkbox">
-                                     <input type="checkbox" id="eckig" name="eckig">
-                                     <label for="eckig">Eckig</label>
-                                </span>
+                                <label class="product__answer-label">
+                                    <input class="product__answer-input" type="checkbox" id="eckig">
+                                    <span class="product_answer-input-description"></span>
+                                     Eckig
+                                </label>
                                 <span class="answer__infotext"></span>
                             </div>
                         </div>
                     </div>
                     <div class="product__answer">
-                        <img src="assets/img/rund-face.png">
+                        <img src="assets/img/rund-face.png" alt="Rund face">
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
-                                <span class="answer__checkbox">
-                                     <input type="checkbox" id="rund" name="rund" checked>
-                                     <label for="rund">Rund</label>
-                                </span>
-                                <span class="answer__infotext">
-
-                                </span>
+                                <label class="product__answer-label">
+                                    <input class="product__answer-input" type="checkbox" id="rund">
+                                    <span class="product_answer-input-description"></span>
+                                    Rund
+                                </label>
+                                <span class="answer__infotext"></span>
                             </div>
                         </div>
                     </div>
                     <div class="product__answer">
-                        <img src="assets/img/oval-face.png">
+                        <img src="assets/img/oval-face.png" alt="Oval face">
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
-                                <span class="answer__checkbox">
-                                     <input type="checkbox" id="oval" name="oval" checked>
-                                     <label for="oval">Oval</label>
-                                </span>
-                                <span class="answer__infotext">
-
-                                </span>
+                                <label class="product__answer-label">
+                                    <input class="product__answer-input" type="checkbox" id="oval">
+                                    <span class="product_answer-input-description"></span>
+                                    Oval
+                                </label>
+                                <span class="answer__infotext"></span>
                             </div>
                         </div>
                     </div>
                     <div class="product__answer">
-                        <img src="assets/img/herzformig-face.png">
+                        <img src="assets/img/herzformig-face.png" alt="Herzformig face">
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
-                                <span class="answer__checkbox">
-                                     <input type="checkbox" id="herzformig" name="herzformig">
-                                     <label for="herzformig">Herzformig</label>
-                                </span>
-                                <span class="answer__infotext">
-
-                                </span>
+                                <label class="product__answer-label">
+                                    <input class="product__answer-input" type="checkbox" id="herzformig">
+                                    <span class="product_answer-input-description"></span>
+                                    Herzformig
+                                </label>
+                                <span class="answer__infotext"></span>
                             </div>
                         </div>
                     </div>
@@ -105,47 +103,46 @@
         </section>
         <section class="is-page-hidden" id="second-page">
             <div class="product__qa">
-                <div class="product__question-content">
+                <div class="product__qa-title">
                     <h3>Welche Anforderungen stellen Sie an die Fassung?</h3>
                 </div>
                 <div class="product__answers-container">
                     <div class="product__answer">
-                        <img src="assets/img/black-glasses.png">
+                        <img src="assets/img/black-glasses.png" alt="Black glasses">
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
-                                <span class="answer__checkbox">
-                                     <input type="checkbox" id="black-glasses" name="black-glasses">
-                                     <label for="black-glasses">Bruchsicher & rostfrei: Metall-Fassungen</label>
-                                </span>
+                                <label class="product__answer-label">
+                                    <input class="product__answer-input" type='checkbox' id="black-glasses">
+                                    <span class="product_answer-input-description"></span>
+                                     Bruchsicher & rostfrei: Metall-Fassungen
+                                </label>
                                 <span class="answer__infotext"></span>
                             </div>
                         </div>
                     </div>
                     <div class="product__answer">
-                        <img src="assets/img/red-glasses.png">
+                        <img src="assets/img/red-glasses.png" alt="Red glasses">
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
-                                <span class="answer__checkbox">
-                                     <input type="checkbox" id="red-glasses" name="red-glasses">
-                                     <label for="red-glasses">Farbenfroh & extravagant: Kunstdoff-Fassungen</label>
-                                </span>
-                                <span class="answer__infotext">
-
-                                </span>
+                                <label class="product__answer-label">
+                                    <input class="product__answer-input" type='checkbox' id="red-glasses">
+                                    <span class="product_answer-input-description"></span>
+                                    Farbenfroh & extravagant: Kunstdoff-Fassungen
+                                </label>
+                                <span class="answer__infotext"></span>
                             </div>
                         </div>
                     </div>
                     <div class="product__answer">
-                        <img src="assets/img/rounded-glasses.png">
+                        <img src="assets/img/rounded-glasses.png" alt="Rounded glasses">
                         <div class="product__answer-bottom-container">
                             <div class="product__answer-bottom">
-                                <span class="answer__checkbox">
-                                     <input type="checkbox" id="rounded-glasses" name="rounded-glasses">
-                                     <label for="rounded-glasses">Leicht & stabil: Titan-Fassungen</label>
-                                </span>
-                                <span class="answer__infotext">
-
-                                </span>
+                                <label class="product__answer-label">
+                                    <input class="product__answer-input" type='checkbox' id="rounded-glasses">
+                                    <span class="product_answer-input-description"></span>
+                                    Leicht & stabil: Titan-Fassungen
+                                </label>
+                                <span class="answer__infotext"></span>
                             </div>
                         </div>
                     </div>
@@ -163,7 +160,7 @@
             <div class="product__container">
                 <div class="product__img">
                     <a class="product__link" href="#">
-                        <img src="assets/img/glasses.png">
+                        <img src="assets/img/glasses.png" alt="Funchal glasses">
                     </a>
                 </div>
                 <div class="product__content">
@@ -216,7 +213,7 @@
             <div class="product__container">
                 <div class="product__img">
                     <a class="product__link" href="#">
-                        <img src="assets/img/glasses.png">
+                        <img src="assets/img/glasses.png" alt="Funchal glasses">
                     </a>
                 </div>
                 <div class="product__content">
